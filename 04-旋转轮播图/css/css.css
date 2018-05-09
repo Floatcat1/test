@@ -1,0 +1,130 @@
+﻿@charset "UTF-8";
+/*初始化  reset*/
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}
+body,button,input,select,textarea{font:12px/1.5 "Microsoft YaHei", "微软雅黑", SimSun, "宋体", sans-serif;color: #666;}
+ol,ul{list-style:none}
+a{text-decoration:none}
+fieldset,img{border:0;vertical-align:top;}
+a,input,button,select,textarea{outline:none;}
+a,button{cursor:pointer;}
+ * {
+            margin: 0;
+            padding: 0;
+        }
+
+    .area{
+        width:1000px;
+        height:500px;
+        padding:7px;
+        /*border:1px solid #ccc;*/
+        margin:0px auto;
+        left: 250px;
+        position:absolute;
+        background-image: url(image/视频背景.jpg);
+        background-attachment: fixed;
+        border: 8px solid hsla(120,100%,56%,0.5);
+        border-radius: 100px/80px;
+    }
+        .mp4{
+        position: absolute;
+        left: 80px;
+        top: 15px;
+    }
+    .bofangqi{
+        position: absolute;
+        /*left: 500px;
+        top:50px;*/
+        width: 100px;
+        height: 200px;
+    /*left: 50%;*/
+   margin-top:0px;
+   /*margin-left: 1500px;*/
+   left: 1300px;
+
+    }
+        .gequ{
+        position: absolute;
+        left:0px;
+        top:490px;
+    }
+
+
+        .box {
+            width: 350px;
+            height: 350px;
+            /*margin:100px;*/
+            border: 1px solid #ccc;
+            position: absolute;
+            top:550px;
+            left:0px;
+        }
+        .big {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 0;
+            left: 360px;
+            border: 1px solid #ccc;
+            overflow: hidden;
+            display: none;
+        }
+        .mask {
+            width: 175px;
+            height: 175px;
+            background: rgba(255, 255, 0, 0.4);
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: move;
+            display: none;
+        }
+        .small {
+            position: relative;
+        }
+        img {
+            vertical-align: top;
+        }
+.wrap{
+    
+    width:1200px;
+    margin:10px auto;
+     position: absolute;
+            top:550px;
+            left:100px;
+}
+.slide {
+    height:500px;
+    position: relative;
+}
+.slide li{
+    position: absolute;
+    left:200px;
+    top:0;
+}
+.slide li img{
+    width:100%;
+}
+.arrow{
+    opacity: 0;
+}
+.prev,.next{
+    width:76px;
+    height:112px;
+    position: absolute;
+    top:50%;
+    margin-top:-56px;
+    background: url(../images/prev.png) no-repeat;
+    z-index: 99;
+}
+.next{
+    right:0;
+    background-image: url(../images/next.png);
+}
+
+
+
+
+
+
+
+

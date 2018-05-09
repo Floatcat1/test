@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--宽度为适应手机宽度-->
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes"/><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telephone=no, email=no"/><!--忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+	
+    <meta name="format-detection" content="telephone=no">
+<title>主页</title>
+
+    <style type="text/css">
+		  body{
+            background: url(images/主页背景.jpg) ;
+            background-attachment:fixed;        }
+
+		.fa{
+			width: 400px;
+			height: 400px;
+			margin:0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   margin-top:-200px;
+   margin-left: -200px;
+    /*border: 1px solid #000;*/
+		}
+		.page1{
+			position: absolute;
+		/*	left:550px;
+			margin-top: 100px;*/
+				left:30px;
+			margin-top: 30px;
+		/*	width:200px;
+			height: 200px;
+			position: relative;
+			left:0;
+			text-align: ce
+			top:0px;nter;*/
+			z-index: 0;
+
+		}
+		.page2{
+			/*position: absolute;
+			left:650px;
+			margin-top: 180px;*/
+			position: absolute;
+				left:100px;
+			margin-top:100px;
+			/*width:100px;
+			height: 100px;*/
+		/*	position: relative;
+			left:120;
+			top:-100px;
+			text-align: center;*/
+			z-index: 1;
+		}
+		.page3{
+			position: absolute;
+				left:150px;
+			margin-top:150px;
+			z-index: 2;
+		}
+		.text1{
+			position: absolute;
+				left:150px;
+			margin-top:-315px;
+			z-index: 0;
+		}
+		.text2{
+			position: absolute;
+				left:80px;
+			margin-top:-190px;
+			z-index: 1;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="fa">
+   <div class="page1">
+      <a href="page1.html"><img src="image/1.jpg" alt="分页1图" >
+      	<div class="text1">主页1</div>
+      </a>
+   </div>
+   <div class="page2">
+      <a href="page2.html"><img src="image/2.jpg" alt="分页2图" >
+		<div class="text2">主页2</div>
+      </a>
+   </div>
+ 
+</div>
+</body>
+</html>

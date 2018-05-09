@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--宽度为适应手机宽度-->
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes"/><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no"/><!--忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+    <style>
+        body{
+            background: url(images/背景1.jpg) ;
+            background-attachment:fixed;        }
+            .text1{
+        width:250px;
+        font-size: 40px;
+         color: ghostwhite;
+        text-shadow: indigo 0 1px 20px;
+        height:55px;
+        border:1px solid #FFFFFF;
+        margin:0px auto;
+        position: absolute;
+        font-family:KaiTi;
+        left: 50%;
+        top: 27%;
+        box-shadow: lightblue 0 1px 10px;
+    transform: translate(-50%,27%)
+    }
+        .nodeSmall {
+            width: 50px;
+            height: 50px;
+            /*background: url(images/xiao.jpg) no-repeat -159px -51px;*/
+            background: url(images/xiao.jpg) ;
+            /*position: fixed;*/
+            position: absolute;
+
+            /*right: 10px;*/
+            /*top: 40%;*/
+            left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%)
+        }
+        .erweima {
+            position: absolute;
+            top: 0;
+            left: -150px;
+        }
+        .nodeSmall a {
+            display: block;
+            width: 50px;
+            height: 50px;
+        }
+        .hide {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+
+    <script>
+        window.onload = function () {
+            //需求：鼠标放到a链接上，显示二维码（添加show类名，去掉hide类名）
+            //      鼠标移开a链接，隐藏二维码（添加hide类名，去掉show类名）
+            //步骤：
+            //1.获取事件源和相关元素
+            //2.绑定事件
+            //3.书写事件驱动程序
+
+
+            //1.获取事件源和相关元素
+            var a = document.getElementsByTagName("a")[0];
+            var div = document.getElementsByClassName("erweima")[0];
+            //2.绑定事件
+            a.onmouseover = fn1;
+            a.onmouseout = fn2;
+            //定义方法
+            function fn1() {
+                //3.书写事件驱动程序
+                div.className = "erweima show";
+//                div.className = div.className.replace("hide","show");
+            }
+            function fn2() {
+                div.className = "erweima hide";
+                //了解,字符串操作，把字符串中的hide替换成show。
+//                div.className = div.className.replace("show","hide");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="text1"><center>二维码显示</center></div>
+    <div class="nodeSmall" id="node_small">
+        <a href="#"></a>
+        <div class="erweima hide" id="er">
+            <img src="images/大.jpg" alt=""/>
+        </div>
+    </div>
+
+</body>
+</html>
